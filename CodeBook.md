@@ -22,12 +22,13 @@ The first column in ```data``` is the subject ID. The second is activity level. 
 
 ### Transformations
 The following transformations are performed by the script:
-1. Merge test and train group subject data (via ```rbind```)
-2. Merge test and train group y_data (via ```rbind```)
-3. Merge test and train group x_data (via ```rbind```)
-4. Name the merged data columns using ```features.txt``` (via ```colnames```)
-5. Merge the previous data sets into one frame (via ```cbind```)
-6. Rename all the columns to be more readable
-7. Turn activity column into a factor with readable levels
-8. Use ```ddply``` from the ```plyr``` package to calculate the mean for each column based on the unique subject id and activity level
-9. Write out this information to a simple and tidy data set, ```output.txt o```
+
+  1. Merge test and train group subject data (via ```rbind```)
+  2. Merge test and train group y_data (via ```rbind```)
+  3. Merge test and train group x_data (via ```rbind```)
+  4. Name the merged data columns using ```features.txt``` (via ```colnames```)
+  5. Merge the previous data sets into one frame (via ```cbind```)
+  6. Rename all the columns to be more readable
+  7. Turn activity column into a factor with readable levels
+  8. Use ```ddply``` from the ```plyr``` package to calculate the mean for each column based on the unique subject id and activity level
+  9. Write out this information to a simple and tidy data set, ```output.txt o```
